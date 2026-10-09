@@ -39,7 +39,6 @@ The system performs basic CRUD (Create, Read, Update, Delete) operations and sto
 - Search marks records
 - Update marks
 - Delete marks records
-- Validate marks within the range of 0–100
 
 🛠️ Technologies Used
 
@@ -57,19 +56,23 @@ The system performs basic CRUD (Create, Read, Update, Delete) operations and sto
 
 🔧 Installation and Setup
 
-1. Clone or download this repository.
+1. Download or clone this repository.
 
 2. Install the required Python package:
    
    pip install mysql-connector-python
 
-3. Start your MySQL Server.
+3. Make sure your MySQL Server is running.
 
-4. Create the database and tables using the provided database setup file.
+4. Open "database.py" and "main.py", configure your MySQL connection credentials by replacing "Your Password" with your own MySQL password.
 
-5. Configure the MySQL connection details locally.
+5. Run the database setup file once to create the database and tables:
+   
+   python database.py
 
-6. Run the application:
+6. Open "main.py" and configure your MySQL connection credentials.
+
+7. Start the application:
    
    python main.py
 
